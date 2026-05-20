@@ -22,6 +22,8 @@ description: >-
   under the Energy Future Holdings name.
 apis: []
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/energy-future-holdings
   - type: Successor
     url: https://www.vistracorp.com
   - type: Successor
