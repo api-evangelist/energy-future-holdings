@@ -5,6 +5,11 @@ url:
 tags:
   - Energy
   - Electricity
+  - Utilities
+  - Power Generation
+  - Electricity Transmission
+  - Retail Energy
+  - Holding Company
   - Defunct Company
 type: Index
 deliveryModel:
@@ -32,7 +37,7 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/energy-future-holdings.png
 access: 3rd-Party
 created: '2026-03-24'
-modified: '2026-04-28'
+modified: '2026-09-06'
 position: Consuming
 description: >-
   Energy Future Holdings was a Dallas-based privately held energy company involved
@@ -46,13 +51,43 @@ apis: []
 common:
   - type: LinkedIn
     url: https://www.linkedin.com/company/energy-future-holdings
-  - type: Successor
+  - type: SuccessorProfile
     url: https://www.vistracorp.com
-  - type: Successor
+  - type: SuccessorProfile
     url: https://www.sempra.com
-  - type: Successor
+  - type: SuccessorProfile
     url: https://www.oncor.com
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
 specificationVersion: '0.23'
+
+x-enrichment:
+  date: '2026-09-06'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: defunct
+  detail: >-
+    Energy Future Holdings Corp. was dissolved by its 2014-2018 Chapter 11 restructuring
+    into Vistra Energy and Sempra/Oncor, and its own domain energyfutureholdings.com now
+    terminates TLS on a WP Engine wildcard certificate and returns the "Site Not
+    Configured" 404 shell on every path including the root, while efhcorp.com serves only
+    a searchvity.com domain-parking frameset — there is no company site left to carry a
+    developer program.
+  evidence:
+    - url: https://energyfutureholdings.com/
+      status: 404
+    - url: https://energyfutureholdings.com/.well-known/api-catalog
+      status: 404
+    - url: https://energyfutureholdings.com/openapi.json
+      status: 404
+    - url: https://energyfutureholdings.com/.well-known/agent-card.json
+      status: 404
+    - url: https://efhcorp.com/
+      status: 200
+    - url: https://efhcorp.com/llms.txt
+      status: 404
+  checked: '2026-09-06'

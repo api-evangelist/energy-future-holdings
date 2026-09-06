@@ -1,0 +1,126 @@
+# Well-known discovery probe — Energy Future Holdings
+#
+# RECORDED ABSENCE. Every named path returned 404 on every host this record knows.
+# Per the enrichment contract, NO `WellKnown` / `SecurityTxt` pointer is emitted in
+# apis.yml: a pointer asserts the provider SERVES the surface, and this file documents
+# that it does not.
+generated: '2026-09-06'
+method: probed
+source: >-
+  Live unauthenticated HTTPS probes, 2026-09-06, browser User-Agent, redirects followed.
+  Energy Future Holdings Corp. was dissolved through its 2014-2018 Chapter 11
+  restructuring (Vistra Energy spun off from TCEH; Sempra acquired Oncor and the
+  remaining estate), so no host under the EFH name serves a live site.
+note: >-
+  energyfutureholdings.com resolves (104.196.149.245) and terminates TLS on a WP Engine
+  wildcard certificate (CN=*.wpengine.com), but every path — including the site root —
+  returns HTTP 404 with the WP Engine "Site Not Configured | 404 Not Found" body. It is
+  a registered-but-unprovisioned domain, not a site. efhcorp.com resolves to a
+  domain-parking frameset (searchvity.com). Neither host is a candidate for any
+  discovery document. Successor-company hosts (vistracorp.com, sempra.com, oncor.com)
+  were deliberately NOT probed on this record's behalf: their surfaces belong to those
+  companies, not to Energy Future Holdings.
+hosts:
+  - host: energyfutureholdings.com
+    reachable: true
+    site_status: 404
+    site_note: 'WP Engine "Site Not Configured" shell — domain provisioned, no site'
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+  - host: www.energyfutureholdings.com
+    reachable: true
+    site_status: 404
+    site_note: 'Same WP Engine unprovisioned shell as the apex'
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+  - host: efhcorp.com
+    reachable: true
+    site_status: 200
+    site_note: >-
+      HTTP 200 but the body is a 151-byte domain-parking frameset pointing at
+      searchvity.com — a parked domain, not a company site.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+contract_discovery:
+  # STEP 0b — hunt harder before concluding "no spec". All misses.
+  openapi_probed:
+    - {url: 'https://energyfutureholdings.com/openapi.json', status: 404}
+    - {url: 'https://energyfutureholdings.com/swagger.json', status: 404}
+    - {url: 'https://energyfutureholdings.com/api-docs', status: 404}
+    - {url: 'https://energyfutureholdings.com/apis.json', status: 404}
+    - {url: 'https://efhcorp.com/openapi.json', status: 404}
+    - {url: 'https://efhcorp.com/swagger.json', status: 404}
+  llms_txt_probed:
+    - {url: 'https://energyfutureholdings.com/llms.txt', status: 404}
+    - {url: 'https://efhcorp.com/llms.txt', status: 404}
+  graphql: not-probed-no-endpoint-evidence
+  mcp: not-probed-no-endpoint-evidence
+  ogc: not-probed-no-evidence-pointing-at-an-ogc-surface
+  wsdl: not-probed-no-baseurl-host-on-record
+  agent_card: 404 on both /.well-known/agent-card.json and /.well-known/agent.json, every host
+  github_org: 'api.github.com user/org search for "energy future holdings" returned 0 results; /orgs/energyfutureholdings and /orgs/efhcorp both 404'
+  packages: 'no first-party package found on npm; no SDK/CLI/SourceCode link exists in apis.yml to derive from'
+  verdict: >-
+    No machine-readable contract of any kind is published under the Energy Future
+    Holdings name. This is a dissolved holding company, not a provider with a gated or
+    unreadable API.
