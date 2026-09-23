@@ -1,7 +1,9 @@
 ---
 title: AI + EV = Can Utilities Generate Enough Power?
 url: https://gabelli.com/research/ai-ev-can-utilities-generate-enough-power/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Energy Future Holdings" press release artificial intelligence'
 position: 4
 source: serpapi-google

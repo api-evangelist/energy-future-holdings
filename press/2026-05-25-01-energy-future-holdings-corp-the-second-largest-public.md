@@ -1,7 +1,9 @@
 ---
 title: Energy Future Holdings Corp., the Second-Largest Public ...
 url: https://lawreview.law.lsu.edu/archives/2310
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Energy Future Holdings" press release artificial intelligence'
 position: 1
 source: serpapi-google

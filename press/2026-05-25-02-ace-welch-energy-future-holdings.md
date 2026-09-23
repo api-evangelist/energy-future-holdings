@@ -1,7 +1,9 @@
 ---
 title: Ace Welch - Energy Future Holdings
 url: https://www.linkedin.com/in/ace-welch-455b4526
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Energy Future Holdings" press release artificial intelligence'
 position: 2
 source: serpapi-google
