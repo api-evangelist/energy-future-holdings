@@ -1,4 +1,4 @@
-# Energy Future Holdings (energy-future-holdings)
+# Energy Future Holdings
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,40 +64,28 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Energy Future Holdings was a Dallas-based privately held energy company involved in electricity generation, mining, wholesale energy trading, transmission and distribution, and retail electricity through subsidiaries Luminant, Oncor, and TXU Energy. The company filed for Chapter 11 bankruptcy in 2014 and was succeeded by Vistra Corp and Sempra Texas Utilities. No active developer APIs are offered under the Energy Future Holdings name.
+Energy Future Holdings was a Dallas-based privately held energy company involved in electricity generation, mining, wholesale energy trading, transmission and distribution, and retail electricity through subsidiaries Luminant, Oncor, and TXU Energy. The company filed for Chapter 11 bankruptcy in 2014 and was succeeded by Vistra Corp (which absorbed Luminant and TXU Energy generation/retail operations) and Sempra Texas Utilities (which acquired Oncor). No active developer APIs are offered under the Energy Future Holdings name.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/energy-future-holdings/refs/heads/main/apis.yml)
+**Areas:** Energy · Electricity · Utilities · Power Generation · Electricity Transmission · Retail Energy · Holding Company · Defunct Company
 
-## Scope
+## Energy Future Holdings on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for Energy Future Holdings is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/energy-future-holdings/](https://apis.io/providers/energy-future-holdings/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+## API Evangelist rating
 
-- Energy, Electricity, Defunct Company
+**Unrated** — no public website could be reached for this company, so there was almost nothing to measure and nothing a reader could check.
 
-## Timestamps
+This is not a score of zero. No rating is published for this company. If that is wrong because something public exists that we missed, say so on this repository or email [info@apievangelist.com](mailto:info@apievangelist.com) and it will be re-run — free, and no justification needed.
 
-- **Created:** 2026-03-24
-- **Modified:** 2026-04-28
+## How this profile is made
 
-## APIs
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-No APIs are documented for Energy Future Holdings. The company's operations were transferred to its successors after the 2014 bankruptcy. Refer to the following entities for active developer resources:
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Energy Future Holdings: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-- **Vistra Corp** — Successor to Luminant (generation) and TXU Energy (retail)
-- **Sempra Texas Utilities / Oncor** — Successor to Oncor (transmission and distribution)
+## Open an issue
 
-## Common Properties
-
-- [Vistra Corp (Successor)](https://www.vistracorp.com)
-- [Sempra (Successor)](https://www.sempra.com)
-- [Oncor (Successor)](https://www.oncor.com)
-
-## Maintainers
-
-**FN:** Kin Lane
-
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/energy-future-holdings/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
